@@ -46,7 +46,7 @@ export interface SharedMedia extends Struct.ComponentSchema {
 export interface SharedMenu extends Struct.ComponentSchema {
   collectionName: 'components_shared_menus';
   info: {
-    displayName: 'Menu';
+    displayName: 'menu';
   };
   attributes: {
     MenuItem: Schema.Attribute.Component<'shared.link', true>;
