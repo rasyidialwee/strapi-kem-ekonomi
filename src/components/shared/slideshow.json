@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_shared_slideshows",
+  "info": {
+    "displayName": "slideshow"
+  },
+  "options": {},
+  "attributes": {
+    "slider": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "name": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

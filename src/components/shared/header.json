@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_shared_headers",
+  "info": {
+    "displayName": "header"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "SiteName": {
+      "type": "string"
+    },
+    "SiteDescription": {
+      "type": "richtext"
+    },
+    "MainMenu": {
+      "type": "component",
+      "component": "shared.menu",
+      "repeatable": false
+    },
+    "CTA": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}
