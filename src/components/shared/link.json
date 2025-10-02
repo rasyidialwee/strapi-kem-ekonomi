@@ -12,10 +12,12 @@
       "type": "string"
     },
     "isExternal": {
-      "type": "string"
+      "type": "boolean",
+      "default": false
     },
     "isButton": {
-      "type": "string"
+      "type": "boolean",
+      "default": false
     }
   },
   "config": {}

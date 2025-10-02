@@ -27,8 +27,8 @@ export interface SharedLink extends Struct.ComponentSchema {
   };
   attributes: {
     href: Schema.Attribute.String;
-    isButton: Schema.Attribute.String;
-    isExternal: Schema.Attribute.String;
+    isButton: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    isExternal: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     label: Schema.Attribute.String;
   };
 }
