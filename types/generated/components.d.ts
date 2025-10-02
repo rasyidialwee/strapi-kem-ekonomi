@@ -15,10 +15,8 @@ export interface SharedHeader extends Struct.ComponentSchema {
   };
   attributes: {
     CTA: Schema.Attribute.Component<'shared.link', false>;
-    logo: Schema.Attribute.Media<'images'>;
     MainMenu: Schema.Attribute.Component<'shared.menu', false>;
-    SiteDescription: Schema.Attribute.RichText;
-    SiteName: Schema.Attribute.String;
+    SiteIdentity: Schema.Attribute.Component<'shared.site-identity', false>;
   };
 }
 
@@ -55,6 +53,18 @@ export interface SharedMenu extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedSiteIdentity extends Struct.ComponentSchema {
+  collectionName: 'components_shared_site_identities';
+  info: {
+    displayName: 'SiteIdentity';
+  };
+  attributes: {
+    SiteIdentity: Schema.Attribute.Media<'images'>;
+    Tagline: Schema.Attribute.String;
+    Title: Schema.Attribute.String;
+  };
+}
+
 export interface SharedSlideshow extends Struct.ComponentSchema {
   collectionName: 'components_shared_slideshows';
   info: {
@@ -87,6 +97,7 @@ declare module '@strapi/strapi' {
       'shared.link': SharedLink;
       'shared.media': SharedMedia;
       'shared.menu': SharedMenu;
+      'shared.site-identity': SharedSiteIdentity;
       'shared.slideshow': SharedSlideshow;
       'shared.text': SharedText;
     }

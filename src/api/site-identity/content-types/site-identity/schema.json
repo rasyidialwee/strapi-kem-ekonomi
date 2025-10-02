@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "site_identities",
+  "info": {
+    "singularName": "site-identity",
+    "pluralName": "site-identities",
+    "displayName": "SiteIdentity"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SiteIdentitySetting": {
+      "type": "component",
+      "component": "shared.site-identity",
+      "repeatable": false
+    }
+  }
+}

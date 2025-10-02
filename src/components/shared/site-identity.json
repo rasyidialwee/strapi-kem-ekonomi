@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_shared_site_identities",
+  "info": {
+    "displayName": "SiteIdentity"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Tagline": {
+      "type": "string"
+    },
+    "SiteIdentity": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  },
+  "config": {}
+}
