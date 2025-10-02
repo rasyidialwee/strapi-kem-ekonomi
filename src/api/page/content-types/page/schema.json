@@ -31,7 +31,8 @@
         "shared.link",
         "shared.header",
         "shared.footer",
-        "shared.slideshow"
+        "shared.slideshow",
+        "section.hero"
       ]
     }
   }

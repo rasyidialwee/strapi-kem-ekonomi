@@ -1,5 +1,18 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface SectionHero extends Struct.ComponentSchema {
+  collectionName: 'components_section_heroes';
+  info: {
+    displayName: 'Hero';
+  };
+  attributes: {
+    button: Schema.Attribute.Component<'shared.link', false>;
+    Description: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    Title: Schema.Attribute.String;
+  };
+}
+
 export interface SharedFooter extends Struct.ComponentSchema {
   collectionName: 'components_shared_footers';
   info: {
@@ -92,6 +105,7 @@ export interface SharedText extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'section.hero': SectionHero;
       'shared.footer': SharedFooter;
       'shared.header': SharedHeader;
       'shared.link': SharedLink;

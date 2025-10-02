@@ -450,6 +450,7 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'shared.header',
         'shared.footer',
         'shared.slideshow',
+        'section.hero',
       ]
     >;
     createdAt: Schema.Attribute.DateTime;
